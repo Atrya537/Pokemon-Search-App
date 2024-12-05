@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+  </head>
+  <body>
+    <h1>Basically a Pokédex</h1>
+    <div id="search-div">
+      <label for="search-input">Search for Pokémon Name/ID</label>
+      <input type="text" placeholder="Pikachu/25" id="search-input" />
+      <button id="search-button">
+        <span class="material-symbols-outlined"> search </span>
+      </button>
+    </div>
+    <div id="info-container">
+      <div id="header-info">
+        <h2 id="pokemon-name"></h2>
+        <h2 id="pokemon-id"></h2>
+        <div id="types"></div>
+      </div>
+      <div id="pokemon-image"></div>
+      <div id="weight-height">
+        <p>Weight: <span id="weight"></span></p>
+        <p>Height: <span id="height"></span></p>
+      </div>
+      <div id="stats-container">
+        <h3>Stats:</h3>
+        <p>HP: <span id="hp"></span></p>
+        <p>Attack: <span id="attack"></span></p>
+        <p>Defense: <span id="defense"></span></p>
+        <p>Sp. Attack: <span id="special-attack"></span></p>
+        <p>Sp. Defense: <span id="special-defense"></span></p>
+        <p>Speed: <span id="speed"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
