@@ -13,31 +13,48 @@
   <body>
     <h1>Basically a Pokédex</h1>
     <div id="search-div">
-      <label for="search-input">Search for Pokémon Name/ID</label>
-      <input type="text" placeholder="Pikachu/25" id="search-input" />
+      <label for="search-input">Search for Pokémon Name/ID:</label>
+      <input type="text" id="search-input" />
       <button id="search-button">
         <span class="material-symbols-outlined"> search </span>
       </button>
     </div>
     <div id="info-container">
       <div id="header-info">
-        <h2 id="pokemon-name"></h2>
-        <h2 id="pokemon-id"></h2>
+        <h1 id="pokemon-name"><span id="pokemon-id"></span></h1>
+        <div id="weight-height">
+          <p>Weight: <span id="weight"></span></p>
+          <p>Height: <span id="height"></span></p>
+        </div>
+        <div id="pokemon-image"></div>
         <div id="types"></div>
       </div>
-      <div id="pokemon-image"></div>
-      <div id="weight-height">
-        <p>Weight: <span id="weight"></span></p>
-        <p>Height: <span id="height"></span></p>
-      </div>
+      <h2>Base Stats</h2>
       <div id="stats-container">
-        <h3>Stats:</h3>
-        <p>HP: <span id="hp"></span></p>
-        <p>Attack: <span id="attack"></span></p>
-        <p>Defense: <span id="defense"></span></p>
-        <p>Sp. Attack: <span id="special-attack"></span></p>
-        <p>Sp. Defense: <span id="special-defense"></span></p>
-        <p>Speed: <span id="speed"></span></p>
+        <div class="stat">
+          <p>HP</p>
+          <p id="hp"></p>
+        </div>
+        <div class="stat">
+          <p>Attack</p>
+          <p id="attack"></p>
+        </div>
+        <div class="stat">
+          <p>Defense</p>
+          <p id="defense"></p>
+        </div>
+        <div class="stat">
+          <p>Sp. Attack</p>
+          <p id="special-attack"></p>
+        </div>
+        <div class="stat">
+          <p>Sp. Defense</p>
+          <p id="special-defense"></p>
+        </div>
+        <div class="stat">
+          <p>Speed</p>
+          <p id="speed"></p>
+        </div>
       </div>
     </div>
   </body>
