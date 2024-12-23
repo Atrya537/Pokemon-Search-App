@@ -14,14 +14,17 @@
     <h1>Basically a Pokédex</h1>
     <div id="search-div">
       <label for="search-input">Search for Pokémon Name/ID:</label>
-      <input type="text" id="search-input" />
+      <input type="text" id="search-input" required />
       <button id="search-button">
         <span class="material-symbols-outlined"> search </span>
       </button>
     </div>
     <div id="info-container">
       <div id="header-info">
-        <h1 id="pokemon-name"><span id="pokemon-id"></span></h1>
+        <h1>
+          <span id="pokemon-name"></span>
+          <span id="pokemon-id"></span>
+        </h1>
         <div id="weight-height">
           <p>Weight: <span id="weight"></span></p>
           <p>Height: <span id="height"></span></p>
@@ -57,5 +60,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
